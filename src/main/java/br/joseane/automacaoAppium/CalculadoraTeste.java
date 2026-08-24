@@ -73,14 +73,16 @@ public class CalculadoraTeste {
         // - inserir texto
         // - validar resultados
         // Exemplo: driver.findElement(...)
-        WebElement el1 = driver.findElement(AppiumBy.accessibilityId("2"));
+        WebElement el1 = driver.findElement(AppiumBy.accessibilityId("Predicted app: Calculator"));
         el1.click();
-        WebElement el2 = driver.findElement(AppiumBy.accessibilityId("plus"));
+        WebElement el2 = driver.findElement(AppiumBy.accessibilityId("2"));
         el2.click();
-        WebElement el3 = driver.findElement(AppiumBy.accessibilityId("2"));
+        WebElement el3 = driver.findElement(AppiumBy.accessibilityId("plus"));
         el3.click();
-        WebElement el4 = driver.findElement(AppiumBy.accessibilityId("equals"));
+        WebElement el4 = driver.findElement(AppiumBy.accessibilityId("2"));
         el4.click();
+        WebElement el5 = driver.findElement(AppiumBy.accessibilityId("equals"));
+        el5.click();
 
         // Fecha a sessão do Appium ao final do teste.
         // Isso libera o emulador e fecha a conexão com o servidor Appium.
